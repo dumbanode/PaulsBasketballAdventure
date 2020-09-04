@@ -1,0 +1,42 @@
+{
+	"entityName": "Convention Center",
+	"encounter": {
+        "locationName":"Convention Center",
+		"text": "Oh hewwo there! Welcome to the Rick and Morty convention! I'm afraid you're going to have to show me your 'high IQ' card. Oh wow, you're a V-IOU graduate! Please come in!",
+		"options": [{
+				"text": "Attend the convention",
+				"onclick": "",
+                "isVisible": ""
+			},
+			{
+				"text": "FIGHT NERD",
+				"onclick": "startBattle('nerd'); exitArea()",
+                "isVisible": "nerdAlive"
+			},
+            {
+				"text": "Buy Stupid Anime Figure",
+				"onclick": "area('convention', 'boughtFigure'); deassign('boughtFigure'); assign('conventionOption');",
+                "isVisible":"conventionOption"
+			},
+            {
+				"text": "Leave",
+				"onclick": "exitArea()",
+                "isVisible":""
+			}
+		]
+    },
+
+    "boughtFigure": {
+        "locationName":"Convention Center",
+		"text": "Oh this figure? Sure, it's all yours champ. I won't judge you for your tastes or anything, you do you.",
+		"options": [{
+				"text": "bye",
+				"onclick": "exitArea()",
+                "isVisible": ""
+			}
+		]
+    }
+
+}
+
+

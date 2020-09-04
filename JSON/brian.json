@@ -1,0 +1,32 @@
+{
+	"entityName": "Brian",
+	"stats": {
+		"hp": 15,
+		"attack": 5
+	},
+	"encounter": {
+		"title": "Brian",
+		"text": "So, you want to enroll here huh? Liss-en 'ere kid, this ain't high school anymore. One wrong move 'n yur goosed! Fill out this quick quiz so we can tell if yur really cut out for this, unless you don't have what it takes!",
+		"options": [{
+				"text": "Take Quiz",
+				"onclick": "formSub(); endEncounter();"
+			},
+			{
+				"text": "Leave",
+				"onclick": "endEncounter()"
+			}
+		]
+    },
+
+	"afterExam": {
+		"title": "Brian",
+		"text": "",
+		"options": [
+			{
+				"text": "Leave",
+				"onclick": "endEncounter()"
+			}
+		]
+    }
+}
+

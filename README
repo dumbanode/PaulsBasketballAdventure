@@ -1,0 +1,50 @@
+==Paul McCartney's Basketball Adventure==
+==Cameron Smith==
+==March 31 2018==
+
+ ---What is it?---
+    Paul McCartney's Basketball Adventure is a point and click adventure game where the choices you make
+    affect the overworld
+
+    You will be presented with an overworld with 3 different kinds of icons
+    The word bubble icon lets you speak with an NPC character
+    The question mark icon lets you visit a location, such as a building
+    The foot icon lets you travel to a new overworld map
+
+    There are three buttons in the top left.
+    The button on the left is the reset game button, which will reset the game.
+    The button in the middle is the save game button, which will save your data to your account on the server.
+    The button on the right is the log out button, which will log you out.
+
+    There's no real goal of the game, as I never finished the game's scenario.
+
+
+ ---What I was not able to implement---
+    I wasn't able to finish the game's scenario, so the game doesn't have a natural conclusion, 
+    because of this, some of the options do not work.
+        I was going to give the option to fight Satan once you have defeated 5 enemies, but that wasn't finished
+        There was also going to be a good route where you didn't have to kill anyone, but didn't have the time
+
+    This website not very accessible.
+        A mobile menu was in development, but due to time restraints, it wasn't finished
+            This mobile menu would display all the text and dialogue inside it instead of another menu
+        I tried my best to position elements in a presentable way when in mobile view, but it's not perfect.
+        I shudder to thinking how this website will look to someone with a screen reader.
+
+    formMenu.php's values are hardcoded in instead of being generated from an external JSON file
+        If I were to continue this game, I would fix that, but since I only had a single formMenu option,
+        I didn't see much reason to implement something I was only going to use once.
+
+    When navigating between maps, the icons load first before the map is finished loading
+        This can be a little confusing or disorientating, so if I were to work on this in the future,
+        I would maybe add a loading screen or delay to fix this
+
+    When loading dialogue or a location menu, there is sometimes a delay before the animation stops,
+    causing this snap-to-location kind of effect. Sometimes the animation expands the window bigger than what the
+    window should be until it snaps back to the proper height. If I were to continue this, I would investigate this further.
+
+    I would also like to implement a function where it will dynamically created a SQL query to save the flags
+    depending on the flags you have already created instead of having to manually type out each flag to save.
+
+    When I use my website on Firefox, the images are much crisper. 
+    Only problem is that it's very zoomed in, so whenever I close a menu it snaps to the top.

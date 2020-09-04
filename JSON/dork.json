@@ -1,0 +1,57 @@
+{
+	"entityName": "Lonely Dork",
+	"stats": {
+		"hp": 15,
+		"attack": 5
+	},
+	"encounter": {
+		"title": "Lonely Dork",
+		"text": "Awwwww maaaaaan. The bi-annual anime convention is in town and I'm not smart enough to get past the mandatory education gates because I'm not very smart. Hey, you look pretty smart! Can you do me a huuuuuuge favor and buy me a 'Luv Life Ecstasy Han-nyan-ko 1/4 Scale Figure', she's my favorite wife-foo! ",
+		"options": [{
+				"text": "Sure thing buddy!",
+				"onclick": "assign('notRequestedByDork'); deassign('conventionOption'); encounter('dork', 'responseyes')",
+                "isVisible":"notRequestedByDork"
+			},
+			{
+				"text": "Frigg'n nerd, go talk to real women!",
+				"onclick": "encounter('dork', 'responseno');"
+			},
+            {
+				"text": "Here's your gross, objectifying anime girl toy.",
+				"onclick": "encounter('dork', 'giveFigure')",
+                "isVisible":"boughtFigure"
+			}
+		]
+    },
+    "responseyes": {
+        "title": "Lonely Dork",
+        "text": "Oh my gosh thank you thank you thaaank yoooou! I just have to have every piece of Han-nyan-ko merchandise! I'll be here waiting for your return. Hopefully I'll meet a special lady while I sit here and try to avoid social interaction!",
+		"options": [
+            {
+				"text": "leave",
+				"onclick": "endEncounter();"
+			}
+		]
+	},
+
+    "responseno": {
+        "title": "Lonely Dork",
+        "text": "GIRLS ONLY DATE JERKS LIKE U, IF I WERE MEANER I'D HAVE AT LEAST TWO GIRLFRIENDS!!!!",
+		"options": [{
+				"text": "Bye",
+				"onclick": "endEncounter()"
+			}
+		]
+	},
+    "giveFigure": {
+        "title": "Lonely Dork",
+        "text": "Oh my goodness yeeeeesss thaaaank yoooou!!!! I seriously can't thank you enough! If I didn't have this specific edition of 'Luv Life Ecstasy Han-nyan-ko 1/4 Scale Figure', I wouldn't have much reason to go on!",
+		"options": [{
+				"text": "Bye",
+				"onclick": "endEncounter()"
+			}
+		]
+	}
+}
+
+

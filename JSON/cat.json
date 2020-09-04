@@ -1,0 +1,22 @@
+{
+	"entityName": "Cat",
+	"stats": {
+		"hp": 10,
+		"attack": 3
+	},
+	"encounter": {
+		"title": "Cat",
+		"text": "The anger-y cat stares at you threateningly",
+		"options": [{
+				"text": "FIGHT CAT",
+				"onclick": "startBattle('cat'); endEncounter();",
+                "isVisible":"catAlive"
+			},
+			{
+				"text": "Leave",
+				"onclick": "endEncounter();",
+                "isVisible":""
+			}
+		]
+	}
+}

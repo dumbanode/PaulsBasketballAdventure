@@ -1,0 +1,154 @@
+{
+
+    "map1":{
+        "img":"map1.png",
+        "icons":[{
+            "iconType":"encounter",
+            "onclick":"startEncounter('cat');",
+            "top":65,
+            "left":35,
+            "isVisible":"catAlive"
+          },
+           {
+            "iconType":"arrow",
+            "onclick":"loadMap('map2'); ",
+            "top":11,
+            "left":56,
+            "isVisible":""
+          },
+           {
+            "iconType":"arrow",
+            "onclick":"loadMap('map3'); ",
+            "top":61,
+            "left":4,
+            "isVisible":""
+          },
+           {
+            "iconType":"arrow",
+            "onclick":"loadMap('map4'); ",
+            "top":80,
+            "left":50,
+            "isVisible":""
+          },
+           {
+            "iconType":"location",
+            "onclick":"enterArea('cheeseShop'); ",
+            "top":20,
+            "left":72,
+            "isVisible":""
+          },
+           {
+            "iconType":"location",
+            "onclick":"enterArea('theAtre'); ",
+            "top":33,
+            "left":31,
+            "isVisible":""
+          }
+        ]
+    },
+
+    "map2":{
+         "img":"map2.png",
+         "icons":[{
+                "iconType":"arrow",
+                "onclick":"loadMap('map1'); ",
+                "top":86,
+                "left":49,
+                "isVisible":""
+           },
+           {
+                "iconType":"arrow",
+                "onclick":"loadAttributeMap('map2-1', 'notEducated'); ",
+                "top":71,
+               "left":18,
+                "isVisible":""
+           },
+           {
+                "iconType":"encounter",
+                "onclick":"startEncounter('brian')",
+                "top":65,
+                "left": 65,
+                "isVisible":""
+           }
+        
+      ]
+    },
+
+    "map2-1":{
+        "img":"map2-1.png",
+        "icons":[{
+            "iconType":"arrow",
+            "onclick":"loadMap('map2'); ",
+            "top":83,
+            "left":49,
+            "isVisible":""
+        },
+          {
+            "iconType":"encounter",
+            "onclick":"startEncounter('yukiko');",
+            "top":85,
+            "left":20,
+            "isVisible":"yukikoAlive"
+          },
+           {
+            "iconType":"location",
+            "onclick":"enterArea('convention'); ",
+            "top":50,
+            "left":50,
+            "isVisible":""
+          }
+      ]
+      
+    },
+
+    "map3":{
+        "img":"map3.png",
+        "icons":[{
+            "iconType":"arrow",
+            "onclick":"loadMap('map1'); ",
+            "top":51,
+            "left":90,
+            "isVisible":""
+          },
+          {
+            "iconType":"encounter",
+            "onclick":"startEncounter('dork');",
+            "top":54,
+            "left":10,
+            "isVisible":""
+          }
+      ]
+    },
+
+
+    "map4":{
+        "img":"map4.png",
+        "icons":[{
+            "iconType":"arrow",
+            "onclick":"loadMap('map1'); ",
+            "top":47,
+            "left":47,
+            "isVisible":""
+          },
+           {
+            "iconType":"encounter",
+            "onclick":"startEncounter('satan') ",
+            "top":62,
+            "left":18,
+            "isVisible":""
+          },
+           {
+            "iconType":"location",
+            "onclick":"enterArea('gime'); ",
+            "top":58,
+            "left":75,
+            "isVisible":""
+          }
+      ]
+    }
+
+
+
+}
+
+

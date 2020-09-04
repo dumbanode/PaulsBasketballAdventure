@@ -1,0 +1,55 @@
+{
+	"entityName": "Yukiko",
+	"stats": {
+		"hp": 15,
+		"attack": 5
+	},
+	"encounter": {
+		"title": "Yukiko",
+		"text": "Blah blah blah blah chie im gonna get so fat! <br> Hey, I've heard this rumor about a cult in town. Have you ever heard of this cult?",
+		"options": [{
+				"text": "Yes, I am in the cult",
+				"onclick": "checkAttributeEncounter('yukiko', 'responseyes_cult', 'responseyes_notcult', 'isNotCult')"
+			},
+			{
+				"text": "Never heard of it",
+				"onclick": "encounter('yukiko', 'responseno');"
+			}
+		]
+    },
+    "responseyes_cult": {
+        "title": "Yukiko",
+        "text": "I work for the local police force and you are currently under arrest until you reveal the whereabouts of this cult!",
+		"options": [{
+				"text": "FIGHT",
+				"onclick": "startBattle('yukiko'); endEncounter();"
+			},
+            {
+				"text": "RUN",
+				"onclick": "unhide(deathScreen);"
+			}
+		]
+	},
+
+    "responseyes_notcult": {
+        "title": "Yukiko",
+        "text": "GTFO, you're not a part of this cult! You're a liar!",
+		"options": [{
+				"text": "Bye",
+				"onclick": "endEncounter()"
+			}
+		]
+	},
+
+    "responseno": {
+        "title": "Yukiko",
+		"text": "Then what good are you for?",
+		"options": [{
+				"text": "Bye",
+				"onclick": "endEncounter()"
+			}
+		]
+    }
+}
+
+

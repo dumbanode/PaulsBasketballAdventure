@@ -1,0 +1,316 @@
+/* LOGIN PAGES */
+#title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    text-align:center;
+    padding:0;
+    text-shadow: 3px 5px grey;
+}
+
+#content{
+    text-align:center;
+}
+
+#top{
+    font-size:50px;
+    margin-bottom: -80px;
+}
+
+#bottom{
+    font-size:80px;
+}
+
+
+/*MENUS*/
+#locationSub{
+    background-color:white;
+    border-style:solid;
+    border-radius: 25px;
+    border-width:15px;
+    padding:10px;
+    border-color:black;
+    border-style:solid;
+}
+
+.textMenu{
+    position: absolute;
+    margin-top:8%;
+    margin-left:10%;
+    width:80%;
+    text-align:center;
+}
+
+.formMenu{
+    position: absolute;
+    margin-top:8%;
+    margin-left:10%;
+    width:80%;
+    text-align:center;
+    background-color:white;
+}
+
+.textbox{
+    background-color:white;
+    padding:1%;
+    z-index:2;
+    font-size: 120%;
+    border-style:solid;
+    border-radius:20px;
+    border-width:15px;
+    border-color:black;
+}
+
+.npc{
+    width:30%;
+    margin-left:60%;
+}
+
+.npcTitle{
+    padding-right:85%;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+
+.textMenu .npcTitle{
+    padding:0;
+    border-style:solid;
+    width:auto;
+    padding:5%;
+    padding-bottom:3%;
+    background-color:white;
+}
+
+.textMenu .toScroll{
+    height:300px;
+}
+
+.formMenu .toScroll{
+    height:600px;
+}
+
+.response{
+    background-color:#e3ecfc;
+    padding: 2%;
+    border-style: solid;
+    border-color: #455060;
+    border-radius: 25px;
+}
+
+/* MAP */
+
+#locationImg{
+    width:40%;
+}
+
+#deathScreen{
+    border-style:solid;
+    width: 80%;
+    height: 80%;
+    position:absolute;
+    margin-left:11%;
+    margin-top:5%;
+    background-color:white;
+    padding:4%;
+    text-align:center;
+}
+
+#deathScreen img{
+    width:40%;
+}
+
+#winScreen{
+    border-style:solid;
+    width: 80%;
+    height: 80%;
+    position:absolute;
+    margin-left:11%;
+    margin-top:5%;
+    background-color:white;
+    padding:4%;
+    text-align:center;
+}
+
+#winScreen img{
+    width:40%;
+}
+
+
+#battleScreen{
+    border-style:solid;
+    width: 80%;
+    height: 80%;
+    position:absolute;
+    margin-left:11%;
+    margin-top:5%;
+    background-color:white;
+    padding:4%;
+    font-size:3em;
+    text-align:center;
+    font-size: 20px;
+}
+
+#map{
+    border: 15px solid black;
+    padding:0;
+    border-radius: 15px;
+}
+
+
+.mapimg{
+    border-radius: 25px;
+}
+
+.icon{
+    position:absolute; 
+    z-index:0;
+    width:10%;
+    opacity: 0.5;
+}
+
+.icon:hover{
+    opacity:1;
+}
+
+#encounterSub{
+    position: absolute;
+    bottom:0;
+    padding: 2%;
+    width:100%;
+    text-align:center;
+
+}
+
+/*GENERAL STYLE*/
+#gameContent{
+    padding:2%;
+}
+
+#username{
+    font-weight:bold;
+}
+
+#stats{
+    border-style:solid;
+    border-width:10px 10px 0px 10px;
+    border-color:black;
+    border-radius: 25px 25px 0px 0px;
+    padding:20px;
+    width:100%;
+    font-size:20px;
+    margin-bottom:-45px;
+    margin-top:2%
+}
+
+
+#manageButtons{
+    position:absolute;
+    padding:20px;
+    width:80%;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+/* ICONS */
+.fa-sync-alt {
+    color:grey;
+    padding-right:3%;
+}
+
+.fa-sync-alt:hover {
+    color:black;
+}
+
+.fa-save {
+    color:grey;
+    padding-right:3%;
+}
+
+.fa-save:hover {
+    color:black;
+}
+
+.fa-sign-out-alt {
+    color:grey;
+}
+
+.fa-sign-out-alt:hover {
+    color:black;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #locationSub{
+        background-color:white;
+        border-style:solid;
+        border-width:7px;
+        border-radius:0px;
+        padding:10px;
+        font-size: 90%;
+    }
+
+
+    #map{
+        border-width:5px;
+        width:100%;
+        border-radius: 0px;
+    }
+
+    #stats{
+        border-radius: 0px;
+        border-width:5px 5px 0px 5px;
+    }
+
+    .textMenu{
+        position: absolute;
+        width:100%;
+        margin-left:0px;
+        margin-top:0px;
+        text-align:center;
+    }
+
+    .textbox{
+        font-size: 90%;
+        border-style:solid;
+        border-radius:0px;
+        border-width:5px;
+    }
+
+    .npcImg{
+        width:50%
+    }
+    #stats{
+        border-radius: 0px;
+        border-width:5px 5px 0px 5px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    #stats{
+        width:90%;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+
+    #encounterSub{
+        margin-bottom:-160px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #encounterSub{
+        margin-bottom:-260px;
+    }
+}
+/* NOT FINISHED
+#mobileMenu{
+    background-color: pink;
+    padding: 30px;
+    width:100%;
+    border-style:solid;
+}*/

@@ -1,0 +1,38 @@
+{
+	"entityName": "gime",
+	"encounter": {
+        "locationName":"Gime",
+		"text": "EY THERE! WELCOME TO THR ROUGHEST TOUGHEST GYM IN TOWN! WE GOT SOME FRIGG'N SICK WORK OUT PLANS AVAILABLE FOR YOU TO TAKE ADVANTAGE OF! MEMBERSHIP PLANS START AT 150 A MONTH, DOES NOT INCLUDE ACTIVATION PLANS. ALSO YOU NEED TO ACTIVATE MONTHLY!",
+		"options": [{
+				"text": "Work Out",
+				"onclick": "area('gime', 'workedOut'); assign('didNotWorkOut'); buffUp(5);",
+                "isVisible": "didNotWorkOut"
+			},
+			{
+				"text": "FIGHT JOCK",
+				"onclick": "startBattle('jock'); exitArea()",
+                "isVisible": "jockAlive"
+			},
+            {
+				"text": "Leave",
+				"onclick": "exitArea()",
+                "isVisible":""
+			}
+		]
+    },
+
+
+    "workedOut": {
+        "locationName":"Gime",
+        "text": "You spent the last 5 hours working out and slamming weights loudly because you are an obnoxious person.<br> <strong>+5 Attack</strong>",
+		"options": [{
+				"text": "back",
+				"onclick": "area('gime', 'encounter')",
+                "isVisible":""
+			}
+		]
+	}
+
+}
+
+

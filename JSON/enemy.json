@@ -1,0 +1,16 @@
+
+
+{
+    "entityName":"",
+    "stats":[
+        "hp"
+    ],
+    "encounter":{
+        "title":"Cat",
+        "text":"The anger-y cat stares at you threateningly",
+        "options":[
+            {"text":"FIGHT CAT","onclick":"battle(); unhide(battleScreen);"},
+            {"text":"Leave","onclick":"endEncounter();"}
+         ]
+    }
+}

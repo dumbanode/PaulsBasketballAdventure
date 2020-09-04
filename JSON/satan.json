@@ -1,0 +1,51 @@
+{
+	"entityName": "satan",
+	"stats": {
+		"hp": 15,
+		"attack": 5
+	},
+	"encounter": {
+		"title": "Satan",
+		"text": "Why, helloooo theeeere. Are you new around these places? You must be because it looks like you've never seen this place in your life. Welcome to my club, it's called Sinful. You just have to come inside and give it a browse, I IMPLORE you!<br> Eh? What's that? Sorry darling, there's a little fee required. Let's say, 5 kills? Oh please, no rush or anything.",
+		"options": [{
+				"text": "Enter Club",
+				"onclick": "checkAttributeEncounter('satan', 'moreThanAmount', 'lessThanAmount', 'cult')"
+			},
+			{
+				"text": "Never heard of it",
+				"onclick": "encounter('yukiko', 'responseno');"
+			}
+		]
+    },
+    "lessThanAmount": {
+        "title": "Satan",
+        "text": "Yeah right, look at the innocence in your eyes. You're no killer! Come back when you've proven your worth!",
+		"options": [{
+				"text": "Bye",
+				"onclick": "endEncounter()"
+			}
+		]
+	},
+
+    "moreThanAmount": {
+        "title": "Satan",
+        "text": "You find yourself inside the club. It's swelting inside. You look around and find that there are no patrons at this club. There isn't even any music, but a low crackling sound, much like a holiday yule log. This party is lame, so you decide to leave,but on your way out you smack your foot on a hollow object. You turn your head down to reveal a broken skull. <br> Satan laughs at the other end of the room. 'You goof! You fell into my trap, now you must work for me, or you'll end up like that poor sap you just bumped your foot on' <br>",
+		"options": [{
+				"text": "Bye",
+				"onclick": "endEncounter()"
+			}
+		]
+	},
+
+    "responseno": {
+        "title": "Yukiko",
+		"text": "Then what good are you for?",
+		"options": [{
+				"text": "Bye",
+				"onclick": "endEncounter()"
+			}
+		]
+    }
+}
+
+

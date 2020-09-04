@@ -1,0 +1,84 @@
+{
+	"entityName": "cheese",
+    "imgName": "yukiko.png",
+	"encounter": {
+        "locationName":"The 'Cult'-vating Cheese Shop",
+		"text": "Ayyy Man welcome to my Cheese shop, which is totally not a cult. How can I help you?",
+		"options": [{
+				"text": "Buy Cheese",
+				"onclick": "area('cheeseShop', 'buyCheese'); assign('didNotEatCheese'); buffUp(3);",
+                "isVisible": "didNotEatCheese"
+			},
+			{
+				"text": "Ask About Cult",
+				"onclick": "area('cheeseShop', 'askCult')",
+                "isVisible": "isNotCult"
+			},
+            {
+				"text": "Leave",
+				"onclick": "exitArea()",
+                "isVisible":""
+			}
+		]
+    },
+    "buyCheese": {
+        "locationName":"The 'Cult'-vating Cheese Shop",
+        "text": "Ayyyy, now that's what I am talking about, here's your cheese man, but don't tell anyone you got it from me.<br> The nutrients in that cheese sure is powerful, what's in that stuff?<br>Gained +3 Attack!!",
+		"options": [{
+				"text": "back",
+				"onclick": "area('cheeseShop', 'encounter')",
+                "isVisible":""
+			}
+		]
+	},
+
+    "askCult": {
+        "locationName":"The 'Cult'-vating Cheese Shop",
+        "text": "Cult? This ain't no cult! This is just an ordinary cheese store!<br> There is definately no staircase that goes down into our secret meet up ~wink ~wink<br>",
+		"options": [{
+				"text": "Go Down Staircase",
+				"onclick": "area('cheeseShop', 'downStairs')",
+                "isVisible":""
+			}
+		]
+	},
+
+    "downStairs": {
+        "locationName":"The 'Cult'-vating Cheese Shop",
+        "text": "As go down the stairs, the noise from the busy store upstairs grows fainter. Soon you are left alone with nothing but the sound of your footsteps, echoing the down the long stone stairway. The temperature grows colder as time continues to march on alongside your footsteps. You are soon greated with a light in the distance. You start to grow terrified about what may lie ahead, do you wish to continue? (You may not be able to come back here again)<br>",
+		"options": [{
+				"text": "Continue Forth",
+				"onclick": "area('cheeseShop', 'joinCult'); assign('isNotCult');",
+                "isVisible":""
+			}, {
+                "text" : "Wuss Out",
+                "onclick" : "area('cheeseShop', 'wussOut')",
+                "isVisible":""
+            }
+		]
+	},
+
+    "joinCult": {
+        "locationName":"The 'Cult'-vating Cheese Shop",
+        "text": "You enter the room and are greeted by a bunch of radical looking dudes. One of them looks at you and says '...hey we have another one that wants to join.'<br> <strong>You have joined the cult!</strong>",
+		"options": [{
+				"text": "Go Back",
+				"onclick": "area('cheeseShop', 'encounter')",
+                "isVisible":""
+			}
+		]
+    },
+
+    "wussOut": {
+        "locationName":"The 'Cult'-vating Cheese Shop",
+        "text": "You have wussed out",
+		"options": [{
+				"text": "Go Back",
+				"onclick": "area('cheeseShop', 'encounter')",
+                "isVisible":""
+			}
+		]
+    }
+}
+
+

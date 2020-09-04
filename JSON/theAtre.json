@@ -1,0 +1,39 @@
+{
+	"entityName": "theAtre",
+    "imgName": "teen.jpeg",
+	"encounter": {
+        "locationName":"The Atre",
+		"text": "Welcome to The Atre, our current movies include 'Revengers: Not Very Long War', 'Beat em Up Bill 2: Bill Beats Some Beets' and 'Seinfeld v Superman' <br>This guy looks like he has 15 health and 5 attack.",
+		"options": [{
+				"text": "See a movie",
+				"onclick": "area('theAtre', 'seeMovie'); assign('didNotSeeMovie'); healthUp(3);",
+                "isVisible": "didNotSeeMovie"
+			},
+			{
+				"text": "FIGHT TICKET CLERK",
+				"onclick": "startBattle('teen'); exitArea()",
+                "isVisible": "teenAlive"
+			},
+            {
+				"text": "Leave",
+				"onclick": "exitArea()",
+                "isVisible":""
+			}
+		]
+    },
+
+
+    "seeMovie": {
+        "locationName":"The Atre",
+        "text": "Wow, Glarfield The Movie was such a gripping movie. It sure was such a brave and courageous decision of the director to kill off Glarfield, you feel inspired<br> <strong>+3 Health</strong>",
+		"options": [{
+				"text": "back",
+				"onclick": "area('theAtre', 'encounter')",
+                "isVisible":""
+			}
+		]
+	}
+
+}
+
+
