@@ -48,3 +48,7 @@
 
     When I use my website on Firefox, the images are much crisper. 
     Only problem is that it's very zoomed in, so whenever I close a menu it snaps to the top.
+    
+    
+ ---Setting up the game---
+    Make sure to add bootstrap source code to the css and javascript folders respectively
